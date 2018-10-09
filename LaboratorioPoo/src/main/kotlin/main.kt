@@ -4,7 +4,8 @@ import models.favoriteSongs
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.transaction
-
+//Javier Salazar
+//Benjamin Izquierdo
 fun main(args: Array<String>) {
     val url = "https://next.json-generator.com/api/json/get/EkeSgmXycS"
     val (request, response, result) = Fuel.get(url).responseObject(favoriteSongs.favoriteSongsArrayDeserializer())
